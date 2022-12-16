@@ -1,0 +1,181 @@
+@font-face {
+    font-family: "blender-book";
+    src: url("../fonts/blender/BLENDERPRO-BOOK.TTF") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "blender-bold";
+    src: url("../fonts/blender/BLENDERPRO-BOLD.TTF") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "blender-italic";
+    src: url("../fonts/blender/BLENDERPRO-BOOKITALIC.TTF") format("truetype");
+    font-weight: normal;
+    font-style: italic;
+  }
+
+@media screen and (max-width: 767px) {
+.about{
+    background-color: #1F2127;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+.logoContainer{
+    background-color: #131417;
+    display: grid;
+    place-items: center;
+    padding: 30px 152px;
+}
+.keychainLogo{
+    width: 100px;
+}
+.kaizenLogo{
+    width: 120px;
+}
+
+.textsContainer p{
+    text-align: center;
+    font-size: 16px;
+    color: #FFFFFF;
+    width: 86%;
+    font-family: "blender-book";
+    font-size: 16px;
+    margin: 20px auto 0px;
+}
+
+.media{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 32px;
+    padding: 30px 0px;
+}
+
+.media div{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+}
+
+.media img{
+    height: 20px;
+}
+
+.discord{  
+    background-color: #7289DA;
+}
+.twitter{
+    background-color: #1DA1F2;
+}
+.email{
+    background-color: #F21D79;
+}
+
+.form{
+    background-color: #292C37;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 91%;
+    margin: 0px auto 78px;
+}
+
+.form h4 {
+    color: #8D4DCD;
+    font-size: 20px;
+    text-align: center;
+    font-family: "blender-bold";
+    margin: 26px 11px;
+}
+
+.input {
+    width: 90%;
+    height: 60px;
+    background: #131417 0% 0% no-repeat padding-box;
+    border: 0.5px solid #73788A;
+    border-radius: 5px;
+    opacity: 1;
+    font-family: "blender-italic";
+    margin: auto;
+    padding: 21px 16px
+}
+
+.suscribe{
+    margin-top: 26px;
+    width: 90%;
+    height: 60px;
+    border-radius: 34px;
+    font-family: "blender-bold";
+    font-size: 24px;
+    color: #FFFFFF;
+    background-color: #8D4DCD;
+    margin: 26px auto;
+}
+
+.suscribed{
+    margin-top: 26px;
+    width: 90%;
+    height: 60px;
+    border-radius: 34px;
+    font-family: "blender-bold";
+    font-size: 16px;
+    color: #8D4DCD;
+    background-color: #292C37;
+    border: 3px solid #8D4DCD;
+    margin: 26px auto;
+}
+
+.submit{
+    background-color: #BE7DFF;
+}
+
+.footer {
+    background: #131417 0% 0% no-repeat padding-box;
+    box-shadow: inset 0px 1px 3px #FFFFFF21, 0px -3px 15px #000000;
+    opacity: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 14px;
+    text-align: center;
+    font-family: "blender-bold";
+}
+
+.aboutIcon{
+    color: #BE7DFF;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+}
+
+.aboutIcon div{
+    background-color: #BE7DFF;
+    height: 4px;
+}
+
+.homeIcon{
+    color: #73788A;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+}
+
+.homeIcon div{
+    background-color: #73788A;
+    height: 4px;
+    opacity: 0%;
+}
+
+}

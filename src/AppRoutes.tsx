@@ -1,6 +1,7 @@
 import React from 'react';
 import { useMediaQuery } from 'react-responsive';
 import {Link, Route, Routes, Outlet, BrowserRouter} from 'react-router-dom';
+import About from './pages/About';
 
 // Pages
 import { Keychain } from './pages/Keychain';
@@ -18,16 +19,16 @@ export default function AppRoutes() {
     return (
         <BrowserRouter>
             <Routes>
-                <Route path="/" element={<Layout />}>
+                {/* <Route path="/" element={<Layout />}> */}
                     <Route index element={<Home />} />
-                    <Route path="about" element={<About />} />
+                    <Route path="about" element={<About/>} />
                     <Route path="keychain" element={<Keychain />} />
 
                     {/* Using path="*"" means "match anything", so this route
                     acts like a catch-all for URLs that we don't have explicit
                     routes for. */}
                     <Route path="*" element={<NoMatch />} />
-                </Route>
+                {/* </Route> */}
             </Routes>
         </BrowserRouter>
 );
@@ -73,13 +74,13 @@ function Home() {
     );
 }
 
-function About() {
-    return (
-        <div>
-            <h2>About</h2>
-        </div>
-    );
-}
+// function About() {
+//     return (
+//         <div>
+//             <h2>About</h2>
+//         </div>
+//     );
+// }
 
 function NoMatch() {
     return (
